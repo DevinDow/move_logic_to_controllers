@@ -8,10 +8,14 @@
 </head>
 <body>
 
+<h1>Products and their Users website</h1>
 <%= link_to "a list of users", users_path %>  |  
 <%= link_to "a list of products", products_path %>
 
 <%= yield %>
+
+<p>Params: <%= params[:format] %></p>
+<p>Params: <%= params.inspect %></p>
 
 </body>
 </html>
