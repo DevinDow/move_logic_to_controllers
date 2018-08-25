@@ -1,5 +1,9 @@
 class ProductsController < ApplicationController
 
+    def new
+        @product = Product.new  # new object, but not saved to DB
+    end
+
     def index
         @products = Product.includes(:user).all
 
